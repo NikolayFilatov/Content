@@ -9,12 +9,15 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="Content\Entity\Content\ContentRepository")
- * @ORM\Table(name="alt_content", options={"collate"="utf8_general_ci"})
+ * @ORM\Table(
+ *      name="alt_content", options={"collate"="utf8_general_ci"},
+ *      indexes={@Index(name="link_type_idx", columns={"link_type"})
+ * )
  *
  * @category    Content
  * @package     Alt
  */
-class Content extends AbstractEntityBase
+class ContentBase extends AbstractEntityBase
 {
     /**
      * Protected entity properties
@@ -31,12 +34,22 @@ class Content extends AbstractEntityBase
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=4096, nullable=true)
+     * @ORM\Column(type="text", nullable=true)
      * @var string
      */
     protected $content;
 
+    /**
+     * @ORM\Column(type="string", length=1024)
+     * @var string
+     */
+    protected $path;
 
+    /**
+     * @ORM\Column(type="string", length=20)
+     * @var string
+     */
+    protected $link_type;
 
 
     /**
@@ -44,7 +57,7 @@ class Content extends AbstractEntityBase
      */
     public function __construct($data = null)
     {
-
         return parent::__construct($data);
     }
+
 }

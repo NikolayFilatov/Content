@@ -1,9 +1,9 @@
 {
-    "name":         "alt/media",
-    "description":  "Media module for manipulation data storage",
+    "name":         "alt/content",
+    "description":  "Content module for Alt project",
     "type":         "library",
     "license" :     "MIT",
-    "homepage":     "https://github.com/neiron486k/Media.git",
+    "homepage":     "https://github.com/NikolayFilatov/Content.git",
     "keywords": [
         "zf2",
         "content",
