@@ -1,0 +1,36 @@
+{
+    "name":         "alt/media",
+    "description":  "Media module for manipulation data storage",
+    "type":         "library",
+    "license" :     "MIT",
+    "homepage":     "https://github.com/neiron486k/Media.git",
+    "keywords": [
+        "zf2",
+        "content",
+        "module"
+    ],
+    "authors": [
+        {
+            "name":      "Nikolay Filatov",
+            "email":     "2519483@gmail.com",
+            "role":      "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.13",
+        "alt/base":     "dev-master"
+    },
+     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Media\\": "src/Content"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
