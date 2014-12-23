@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Media\\": "src/Content"
+            "Content\\": "src/Content"
         },
         "classmap": [
             "./Module.php"

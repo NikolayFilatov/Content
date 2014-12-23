@@ -1,5 +1,5 @@
 <?php
-namespace Media;
+namespace Content;
 
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;

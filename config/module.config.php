@@ -2,7 +2,7 @@
 /**
  * namespace
  */
-namespace Media;
+namespace Content;
 $cache = getenv('APP_ENV') ? 'my_redis' : 'array';
 
 return [
