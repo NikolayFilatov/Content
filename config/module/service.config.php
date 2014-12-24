@@ -12,6 +12,7 @@ return [
         },
     ],
     'invokables'    => [
-
+        'Content\Entity\Content\ContentBase'    => 'Content\Entity\Content\ContentBase',
+        'Content\Entity\Content\ContentService' => 'Content\Entity\Content\ContentService',
     ],
 ];

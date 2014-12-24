@@ -6,12 +6,13 @@ namespace Content\Entity\Content;
 
 use Base\Entity\AbstractEntityBase;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Index as Index;
 
 /**
  * @ORM\Entity(repositoryClass="Content\Entity\Content\ContentRepository")
  * @ORM\Table(
  *      name="alt_content", options={"collate"="utf8_general_ci"},
- *      indexes={@Index(name="link_type_idx", columns={"link_type"})
+ *      indexes={@Index(name="link_type_idx", columns={"link_type"})}
  * )
  *
  * @category    Content
